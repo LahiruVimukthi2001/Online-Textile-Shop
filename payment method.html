@@ -1,0 +1,154 @@
+<html>
+<head>
+<style>
+
+#container{width:1360px;
+            height:900px;
+            background-color:;}
+
+div{border-style:solid;
+    border-width: 6px;
+    background-image:url(image30.jpg);
+    background-size:cover;
+    width:600px;
+    height:1500px;
+    margin-top:60px;
+    margin-bottom:60px;
+    margin-left:80px;
+    margin-right:80px;}
+
+h1{margin-left:540px;
+  color:#191970;
+   text-decoration:underline;}
+
+  
+
+</style>
+<script>
+
+function validate()
+{
+  if(document.form.name.value.length<1)
+  {     alert("please enter Your name"); }
+   
+  if(isNaN(document.form.address))
+  {     alert("please enter Your Adress");}
+        
+  
+  if(isNaN(document.form.mail))
+  {     alert("please enter Your E-mail");}
+        
+   
+  if(isNaN(document.form))
+  {     alert("please enter Your Telephone number");}
+
+  if(isNaN(document.form.dnumber))
+  {     alert("please enter payment date");}
+
+
+    
+  if(document.form.payment.selectedIndex==0)
+  {alert("please select the payment method");}
+   
+  if(isNaN(document.form.amount))
+  {     alert("please enter amount");}
+
+  if(isNaN(document.form.size))
+  {     alert("please enter size");}
+
+ if(document.form.comment.value)
+  {     alert("please put your comment");}
+
+  if(!document.form.agree.checked)
+  {alert("please agree to the allm information");}     
+   
+}
+</script>
+</head>
+<body  style="background-color:#DEB887;">
+<div1>
+
+<div id="container"><br><br>
+
+<h1>"Fill the  Form"</h1>
+
+<br><br>
+<center>
+<form  name="form"  method="post"  onSubmit="validate();">
+<table>
+
+<tr>
+<td><h2>Customer Name </h2> </td>
+<td> <input type="text" name="name"> </td> 
+</tr>
+
+<tr>
+<td><h2>Address</h2> </td>
+<td> <input type="text" name="address"> </td> 
+</tr>
+
+<tr>
+<td><h2>E-mail</h2></td>
+<td> <input type="text" name="maill"> </td> 
+</tr>
+
+<tr>
+<td><h2>Telephone number</h2></td>
+<td> <input type="text" name="number"> </td> 
+</tr>
+
+<tr>
+<td><h2>Payment Date</h2></td>
+<td> <input type="text" name="dnumber"> </td> 
+</tr>
+
+
+		
+<tr>
+<td><h2>Payment Method</h2> </td>
+<td> 
+<select name="payment">
+<option>Select payent Method</option>
+<option>Cheque</option>
+<option>Credit card</option>
+</select>				
+</td>
+</tr>
+
+<tr>
+<td><h2>Amount</h2></td>
+<td><input type="amount" name="amount"></td>
+</tr>
+
+<tr>
+<td><h2>Size</h2></td>
+<td><input type="number" name="size"></td>
+</tr>    
+
+<tr>
+  <td><h2>Color</h2</td>
+  <td><input type="text" name="color"></td>
+</tr>
+
+<tr>
+<td><h2>Comments</h2></td>
+<td><input type="text" name="comment"></td>
+</tr>
+
+<tr>
+<td><h2>All Information are correct<h2></td>
+<td><input type="checkbox" name="agree"> </td>
+</tr>
+
+<tr>
+<td><input type="submit" value="Submit"></td>
+<td><input type="reset" value="Reset"></td>
+</tr>
+
+</table>
+</form>
+</center>
+</div>
+</div1>
+</body>
+</html>
